@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICTec Digital | Soluciones Tecnológicas</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/5210000000000" class="whatsapp-float" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand orbitron" href="#">ICTec Digital</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#servicios" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#sorteo" class="nav-link">Sorteo</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Tienda</a></li>
+                <li class="nav-item">
+                    <a href="https://wa.me/5210000000000" class="btn btn-whatsapp ms-3">WhatsApp</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carrusel -->
+<section id="hero">
+    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 - Sorteo -->
+            <div class="carousel-item active">
+                <div class="hero-slide d-flex align-items-center"
+                    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Imágenes/AnuncioSorteo.png'); background-size: cover; background-position: center;">
+                    <div class="container text-center text-white">
+                        <h1>¡Participa en el Sorteo!</h1>
+                        <p>Podrías ganar los <strong>Visores VR Meta 3</strong></p>
+                        <a href="https://wa.me/5210000000000" class="btn btn-main">Participar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 - Curso -->
+            <div class="carousel-item">
+                <div class="hero-slide d-flex align-items-center"
+                    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Imágenes/AnuncioCurso.png'); background-size: cover; background-position: center;">
+                    <div class="container text-center text-white">
+                        <h1>Nuevo Curso de Computación</h1>
+                        <p>Aprende desde cero y mejora tus habilidades digitales</p>
+                        <a href="https://wa.me/5210000000000" class="btn btn-main">Inscribirme</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE MI -->
+<section class="py-5 text-center reveal">
+    <div class="container">
+        <h2 class="orbitron mb-3">Confianza y Experiencia</h2>
+
+        <p class="mb-4">
+            Soy profesional con formación en
+            <strong class="text-green">Ingeniería Mecatrónica</strong> e
+            <strong class="text-green">Ingeniería en Sistemas y Tecnologías de la Información</strong>, especializado en
+            el desarrollo de
+            soluciones tecnológicas prácticas e innovadoras.<br>
+            Cuento con experiencia en herramientas como <strong class="text-green">Arduino IDE</strong>,
+            <strong class="text-green">IFTTT</strong>, <strong class="text-green">MultiSim</strong>,
+            <strong class="text-green">Packet Tracer</strong>, <strong class="text-green">SolidWorks</strong>
+            y paquetería <strong class="text-green">Office</strong>, así como en programación con
+            <strong class="text-green">C</strong> y <strong class="text-green">C#</strong>, y desarrollo web con
+            <strong class="text-green">HTML</strong>, <strong class="text-green">CSS</strong> y
+            <strong class="text-green">JavaScript</strong>. Esto me permite integrar hardware y software para crear sistemas eficientes y soluciones digitales orientadas a la productividad.
+        </p>
+
+        <!-- CONTADOR -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-4">
+                <h2 class="counter text-green orbitron" data-target="100">0</h2>
+                <p>Trabajos realizados</p>
+            </div>
+        </div>
+
+        <!-- ICONOS -->
+        <div class="row mt-4 text-center">
+
+            <div class="col-6 col-md-3">
+                <i class="bi bi-gear-fill icon-box"></i>
+                <p>Soluciones</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <i class="bi bi-cpu-fill icon-box"></i>
+                <p>Tecnología</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <i class="bi bi-speedometer2 icon-box"></i>
+                <p>Eficiencia</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <i class="bi bi-lightbulb-fill icon-box"></i>
+                <p>Innovación</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center orbitron mb-5">Servicios</h2>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Desarrollo Web -->
+            <div class="col-md-4 col-sm-6">
+                <a href="desarrollo-web.html" class="card-link">
+                    <div class="card-tech">
+                        <div class="card-tech__img" style="background-image: url('Imágenes/DesarrolloWeb.webp');"></div>
+                        <div class="card-tech__overlay"></div>
+
+                        <div class="card-tech__content">
+                            <i class="bi bi-code-slash"></i>
+                            <h5>Desarrollo Web</h5>
+                            <p>Diseño de páginas web, landing pages y tiendas en línea optimizadas para atraer clientes
+                                y mejorar tu presencia digital.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Diseño -->
+            <div class="col-md-4 col-sm-6">
+                <a href="diseno-edicion.html" class="card-link">
+                    <div class="card-tech">
+                        <div class="card-tech__img" style="background-image: url('Imágenes/DisenoEdicion.webp');"></div>
+                        <div class="card-tech__overlay"></div>
+
+                        <div class="card-tech__content">
+                            <i class="bi bi-palette"></i>
+                            <h5>Edición y Diseño</h5>
+                            <p>Creación de contenido visual, edición de video, diseño de flyers y material gráfico para
+                                redes sociales y negocios.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Celulares -->
+            <div class="col-md-4 col-sm-6">
+                <a href="reparacion-celulares.html" class="card-link">
+                    <div class="card-tech">
+                        <div class="card-tech__img" style="background-image: url('Imágenes/ReparacionCelulares.webp');">
+                        </div>
+                        <div class="card-tech__overlay"></div>
+
+                        <div class="card-tech__content">
+                            <i class="bi bi-phone"></i>
+                            <h5>Reparación Celulares</h5>
+                            <p>Cambio de pantalla, batería, reparación de fallas y mantenimiento para alargar la vida
+                                útil de tu dispositivo.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Servicio Técnico -->
+            <div class="col-md-4 col-sm-6">
+                <a href="servicio-tecnico.html" class="card-link">
+                    <div class="card-tech">
+                        <div class="card-tech__img" style="background-image: url('Imágenes/ServicioTecnico.webp');">
+                        </div>
+                        <div class="card-tech__overlay"></div>
+
+                        <div class="card-tech__content">
+                            <i class="bi bi-tools"></i>
+                            <h5>Servicio Técnico</h5>
+                            <p>Diagnóstico, mantenimiento y reparación de equipos de cómputo, instalación de software y
+                                optimización del sistema.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Soporte Remoto -->
+            <div class="col-md-4 col-sm-6">
+                <a href="soporte-remoto.html" class="card-link">
+                    <div class="card-tech">
+                        <div class="card-tech__img" style="background-image: url('Imágenes/SoporteRemoto.webp');"></div>
+                        <div class="card-tech__overlay"></div>
+
+                        <div class="card-tech__content">
+                            <i class="bi bi-laptop"></i>
+                            <h5>Soporte Remoto</h5>
+                            <p>Asistencia a distancia para resolver problemas, instalar programas, configurar sistemas y
+                                optimizar tu equipo.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Venta de PC -->
+            <div class="col-md-4 col-sm-6">
+                <a href="venta-pc.html" class="card-link">
+                    <div class="card-tech">
+                        <div class="card-tech__img" style="background-image: url('Imágenes/VentaPC.webp');"></div>
+                        <div class="card-tech__overlay"></div>
+
+                        <div class="card-tech__content">
+                            <i class="bi bi-pc-display"></i>
+                            <h5>Venta de PC</h5>
+                            <p>Equipos optimizados para trabajo o gaming</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Sorteo -->
+<section id="sorteo" class="py-5 sorte-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <!-- Imagen -->
+            <div class="col-md-5 text-center">
+                <img src="Imágenes/VR.webp" alt="Visor VR Meta Quest 3" class="img-fluid rounded-4 shadow img-sorteo">
+            </div>
+
+            <!-- Contenido -->
+            <div class="col-md-7 text-center text-md-start">
+                <h2 class="orbitron mb-3">Sorteo Activo</h2>
+                
+                <h4 class="mb-3">
+                    Gana un <strong class="text-green">Visor VR Meta Quest 3</strong>
+                </h4>
+                
+                <p class="mb-3">
+                    Vive la experiencia de realidad virtual con uno de los dispositivos más avanzados del mercado.
+                </p>
+
+                <ul class="list-unstyled mb-3">
+                    <li><i class="bi bi-check-circle-fill text-green"></i> Alta resolución y rendimiento</li>
+                    <li><i class="bi bi-check-circle-fill text-green"></i> Experiencia inmersiva total</li>
+                    <li><i class="bi bi-check-circle-fill text-green"></i> Ideal para gaming y entretenimiento</li>
+                </ul>
+
+                <h5 class="text-danger fw-bold">Cupos limitados</h5>
+
+                <!-- BOTÓN ANIMADO -->
+                <div class="wrapper mt-3">
+                    <a class="cta" href="https://wa.me/5210000000000">
+                        <span>Participar</span>
+                        <span>
+                            <svg width="66px" height="43px" viewBox="0 0 66 43">
+                                <g fill="none">
+                                    <path class="one" d="M40 4 L44 0 L66 21 L44 43 L40 39 L57 21 Z" fill="#fff"/>
+                                    <path class="two" d="M20 4 L24 0 L46 21 L24 43 L20 39 L37 21 Z" fill="#fff"/>
+                                    <path class="three" d="M0 4 L4 0 L26 21 L4 43 L0 39 L17 21 Z" fill="#fff"/>
+                                </g>
+                            </svg>
+                        </span> 
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PC'S DESTACADAS -->
+<section id="pcs" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center orbitron mb-5">PC's Destacadas</h2>
+
+        <div class="row g-4">
+        
+    <!-- PC 1 -->
+    <div class="col-md-4">
+        <div class="pc-card">
+    
+            <div class="pc-img">
+                <img src="Imágenes/pc1.webp" class="img-fluid">
+            </div>
+    
+            <p class="toggle-specs" onclick="openModal(this)" data-name="TecDigiOffice 5600G" data-price="8999" data-specs="
+                               bi-cpu:Ryzen 5 5600G (6C/12T hasta 4.4GHz)|
+                               bi-gpu-card:Gráficos integrados|
+                               bi-memory:16GB DDR4 3200 MHz|
+                               bi-device-ssd:500GB NVMe|
+                               bi-motherboard:A520M|
+                               bi-lightning-charge:500W 80+ Bronze|
+                               bi-wifi:Ethernet (Sin WiFi)|
+                               bi-windows:Windows 11">
+                <i class="bi bi-eye"></i> Ver especificaciones
+            </p>
+    
+            <div class="pc-info">
+                <h5>TecDigiOffice 5600G</h5>
+                <p class="price">$8,999 MXN</p>
+    
+                <p class="desc">
+                    Ideal para oficina, clases y uso diario rápido y estable.
+                </p>
+    
+                <div class="wrapper">
+                    <a class="cta cta-buy" href="javascript:void(0);" onclick="openModal(this)" data-name="TecDigiOffice 5600G"
+                        data-price="8999" data-specs="
+                           bi-cpu:Ryzen 5 5600G (6C/12T hasta 4.4GHz)|
+                           bi-gpu-card:Gráficos integrados|
+                           bi-memory:16GB DDR4 3200 MHz|
+                           bi-device-ssd:500GB NVMe|
+                           bi-motherboard:A520M|
+                           bi-lightning-charge:500W 80+ Bronze|
+                           bi-wifi:Sin WiFi|
+                           bi-windows:Windows 11">
+                        <span>Comprar</span>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- PC 2 -->
+    <div class="col-md-4">
+        <div class="pc-card">
+
+            <div class="pc-img">
+                <img src="Imágenes/pc2.webp" class="img-fluid">
+            </div>
+
+            <p class="toggle-specs" onclick="openModal(this)" data-name="TecDigiPro 5600" data-price="15499" data-specs="
+                               bi-cpu:Ryzen 5 5600|
+                               bi-gpu-card:Radeon RX 6600 8GB|
+                               bi-memory:16GB DDR4 3200 MHz|
+                               bi-device-ssd:500GB NVMe|
+                               bi-motherboard:B450M|
+                               bi-lightning-charge:550W 80+ Bronze|
+                               bi-wifi:Ethernet y WiFi|
+                               bi-windows:Windows 11">
+                <i class="bi bi-eye"></i> Ver especificaciones
+            </p>
+
+            <div class="pc-info">
+                <h5>TecDigiPro 5600</h5>
+                <p class="price">$15,499 MXN</p>
+
+                <p class="desc">
+                    Alto rendimiento para diseño, multitarea y gaming fluido.
+                </p>
+
+                <div class="wrapper">
+                    <a class="cta cta-buy" href="javascript:void(0);" onclick="openModal(this)" data-name="TecDigiPro 5600"
+                        data-price="15499" data-specs="
+                           bi-cpu:Ryzen 5 5600|
+                           bi-gpu-card:Radeon RX 6600 8GB|
+                           bi-memory:16GB DDR4 3200 MHz|
+                           bi-device-ssd:500GB NVMe|
+                           bi-motherboard:B450M|
+                           bi-lightning-charge:550W 80+ Bronze|
+                           bi-wifi:Ethernet y WiFi|
+                           bi-windows:Windows 11">
+                        <span>Comprar</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PC 3 -->
+    <div class="col-md-4">
+        <div class="pc-card">
+
+            <div class="pc-img">
+                <img src="Imágenes/pc3.webp" class="img-fluid">
+            </div>
+
+            <p class="toggle-specs" onclick="openModal(this)" data-name="TecnoGamer R7 RTX" data-price="21999" data-specs="
+                               bi-cpu:Ryzen 5 5600|
+                               bi-gpu-card:Radeon RX 6600 8GB|
+                               bi-memory:16GB DDR4 3200 MHz|
+                               bi-device-ssd:500GB NVMe|
+                               bi-motherboard:B450M|
+                               bi-lightning-charge:550W 80+ Bronze|
+                               bi-wifi:Ethernet y WiFi|
+                               bi-windows:Windows 11">
+                <i class="bi bi-eye"></i> Ver especificaciones
+            </p>
+
+            <div class="pc-info">
+                <h5>TecnoGamer R7 RTX</h5>
+                <p class="price">$21,999 MXN</p>
+
+                <p class="desc">
+                    Gaming en ultra, streaming y máximo rendimiento actual.
+                </p>
+
+                <div class="wrapper">
+                    <a class="cta cta-buy" href="javascript:void(0);" onclick="openModal(this)" data-name="TecnoGamer R7 RTX"
+                        data-price="21999" data-specs="
+                           bi-cpu:Ryzen 5 5600|
+                           bi-gpu-card:Radeon RX 6600 8GB|
+                           bi-memory:16GB DDR4 3200 MHz|
+                           bi-device-ssd:500GB NVMe|
+                           bi-motherboard:B450M|
+                           bi-lightning-charge:550W 80+ Bronze|
+                           bi-wifi:Ethernet y WiFi|
+                           bi-windows:Windows 11">
+                        <span>Comprar</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+        
+        <!-- BENEFICIOS / CONFIANZA -->
+        <div class="row mt-5 text-center g-4">
+        
+            <div class="col-md-3 col-6">
+                <i class="bi bi-shield-check icon-box"></i>
+                <p>Garantía de 1 año</p>
+            </div>
+        
+            <div class="col-md-3 col-6">
+                <i class="bi bi-truck icon-box"></i>
+                <p>Envíos gratis a toda la República Mexicana</p>
+            </div>
+        
+            <div class="col-md-3 col-6">
+                <i class="bi bi-credit-card icon-box"></i>
+                <p>Transferencia, depósito y Mercado Pago (comisión)</p>
+            </div>
+        
+            <div class="col-md-3 col-6">
+                <i class="bi bi-box-seam icon-box"></i>
+                <p>Equipos nuevos, armados tras confirmar pago</p>
+            </div>
+        
+        </div>
+
+    </div>
+</section>
+
+<!-- Blog -->
+<section id="blog" class="py-5">
+    <div class="container">
+        <h2 class="text-center orbitron mb-4">Blog</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img src="Imágenes/blog1.webp" class="img-fluid">
+                    <h5>Cómo elegir tu PC gamer</h5>
+                    <p>Guía rápida para tomar la mejor decisión</p>
+                    <a href="#" class="btn btn-outline-primary">Leer más</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final text-center">
+    <h2>¿Necesitas ayuda tecnológica?</h2>
+    <a href="https://wa.me/5210000000000" class="btn btn-main">Contáctame ahora</a>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-4">
+    <p>© 2026 ICTec Digital</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+<!-- MODAL -->
+<div id="pcModal" class="pc-modal">
+    <div class="pc-modal-content">
+
+        <!-- CERRAR -->
+        <span class="pc-close" onclick="closeModal()">&times;</span>
+
+        <!-- TÍTULO -->
+        <h3 id="modalTitle"></h3>
+        <p id="modalPrice" class="price"></p>
+        <p id="modalNote" style="font-size:0.8rem; color:gray;"></p>
+
+        <!-- SPECS -->
+        <div id="modalSpecs" class="modal-specs"></div>
+
+        <!-- FORMULARIO -->
+        <form id="pcForm" onsubmit="sendToWhatsApp(event)">
+        
+            <input type="hidden" id="pcName">
+        
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="correo" placeholder="Correo electrónico" required>
+        
+            <select id="pago" required onchange="actualizarPrecioModal()">
+                <option value="">Método de pago</option>
+                <option value="transferencia">Transferencia</option>
+                <option value="deposito">Depósito</option>
+                <option value="mp">Mercado Pago</option>
+            </select>
+        
+            <button type="submit" class="btn-main mt-3">
+                Comprar por WhatsApp
+            </button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
