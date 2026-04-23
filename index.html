@@ -7,41 +7,58 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
     <!-- CSS -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
 <!-- WhatsApp Floating -->
-<a href="https://wa.me/5210000000000" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/522221106016?text=¡Hola%20*IC%20TecDigital*!%20Me%20gustaría%20recibir%20más%20información%20sobre:%20" class="btn btn-whatsapp" class="whatsapp-float" target="_blank">
     <i class="bi bi-whatsapp"></i>
 </a>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
     <div class="container">
-        <a class="navbar-brand orbitron" href="#">ICTec Digital</a>
+
+        <!-- Logo + Nombre -->
+        <a class="navbar-brand orbitron d-flex align-items-center" href="#">
+            <img src="Imágenes/Logo.webp" alt="Logo" width="40" class="me-2">
+            <span>ICTec Digital</span>
+        </a>
+
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="#servicios" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#sorteo" class="nav-link">Sorteo</a></li>
-                <li class="nav-item"><a href="#blog" class="nav-link">Tienda</a></li>
+            <ul class="navbar-nav ms-auto align-items-center">
+
                 <li class="nav-item">
-                    <a href="https://wa.me/5210000000000" class="btn btn-whatsapp ms-3">WhatsApp</a>
+                    <a href="#blog" class="nav-link">Blog</a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="#sorteo" class="nav-link">Sorteo</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#pcs" class="nav-link">Tienda</a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a href="https://wa.me/522221106016?text=¡Hola%20*IC%20TecDigital*!%20Me%20gustaría%20recibir%20más%20información%20sobre:%20" class="btn btn-whatsapp" target="_blank">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+                </li>
+
             </ul>
         </div>
+
     </div>
 </nav>
 
@@ -157,7 +174,7 @@
                 </a>
             </div>
 
-            <!-- Diseño -->
+            <!-- Edición y Diseño -->
             <div class="col-md-4 col-sm-6">
                 <a href="diseno-edicion.html" class="card-link">
                     <div class="card-tech">
@@ -174,7 +191,7 @@
                 </a>
             </div>
 
-            <!-- Celulares -->
+            <!-- Reparación Celulares -->
             <div class="col-md-4 col-sm-6">
                 <a href="reparacion-celulares.html" class="card-link">
                     <div class="card-tech">
@@ -311,7 +328,7 @@
         <div class="pc-card">
     
             <div class="pc-img">
-                <img src="Imágenes/PC1.webp" class="img-fluid">
+                <img src="Imágenes/pc1.webp" class="img-fluid">
             </div>
     
             <p class="toggle-specs" onclick="openModal(this)" data-name="TecDigiOffice 5600G" data-price="8999" data-specs="
@@ -358,7 +375,7 @@
         <div class="pc-card">
 
             <div class="pc-img">
-                <img src="Imágenes/PC2.webp" class="img-fluid">
+                <img src="Imágenes/pc2.webp" class="img-fluid">
             </div>
 
             <p class="toggle-specs" onclick="openModal(this)" data-name="TecDigiPro 5600" data-price="15499" data-specs="
@@ -405,7 +422,7 @@
         <div class="pc-card">
 
             <div class="pc-img">
-                <img src="Imágenes/PC3.webp" class="img-fluid">
+                <img src="Imágenes/pc3.webp" class="img-fluid">
             </div>
 
             <p class="toggle-specs" onclick="openModal(this)" data-name="TecnoGamer R7 RTX" data-price="21999" data-specs="
@@ -477,18 +494,114 @@
     </div>
 </section>
 
+<!-- CTA FINAL -->
+<section class="cta-final text-center">
+    <h2>¿Necesitas ayuda tecnológica?</h2>
+
+    <div class="wrapper justify-content-center mt-3">
+        <a class="cta" 
+           href="https://wa.me/522221106016?text=¡Hola%20*IC%20TecDigital*!%20Me%20gustaría%20recibir%20más%20información%20sobre:%20" 
+           target="_blank">
+            <span>
+                <i class="bi bi-whatsapp"></i> Contáctame ahora
+            </span>
+        </a>
+    </div>
+</section>
+
 <!-- Blog -->
 <section id="blog" class="py-5">
     <div class="container">
         <h2 class="text-center orbitron mb-4">Blog</h2>
         <div class="row g-4">
 
+            <!-- Blog 1 -->
             <div class="col-md-4">
                 <div class="blog-card">
-                    <img src="Imágenes/blog1.webp" class="img-fluid">
-                    <h5>Cómo elegir tu PC gamer</h5>
-                    <p>Guía rápida para tomar la mejor decisión</p>
-                    <a href="#" class="btn btn-outline-primary">Leer más</a>
+                    <img src="Imágenes/Blog2.webp" class="img-fluid">
+
+                    <!-- Fecha -->
+                    <small class="text-muted">
+                        <i class="bi bi-calendar3"></i> Próximamente
+                    </small>
+
+                    <h5 class="mt-2">5 mejores laptops gamer en 2026</h5>
+
+                    <!-- Estrellas -->
+                    <div class="mb-2 text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+
+                    <p>Descubre cuáles son las mejores opciones calidad-precio para gaming este año.</p>
+
+                    <!-- Botón -->
+                    <div class="wrapper">
+                        <a class="cta" href="laptops-gaming-2026.html">
+                            <span>Leer más</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img src="Imágenes/Blog2.webp" class="img-fluid">
+
+                    <small class="text-muted">
+                        <i class="bi bi-calendar3"></i> Próximamente
+                    </small>
+
+                    <h5 class="mt-2">Windows vs Linux vs MacOS</h5>
+
+                    <div class="mb-2 text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+
+                    <p>Comparativa completa para elegir el sistema operativo ideal según tus necesidades.</p>
+
+                    <div class="wrapper">
+                        <a class="cta" href="windows-vs-linux-vs-macos.html">
+                            <span>Leer más</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img src="Imágenes/Blog2.webp" class="img-fluid">
+
+                    <small class="text-muted">
+                        <i class="bi bi-calendar3"></i> Próximamente
+                    </small>
+
+                    <h5 class="mt-2">AMD vs Intel</h5>
+
+                    <div class="mb-2 text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+
+                    <p>¿Qué procesador te conviene más? Analizamos rendimiento, precio y uso real.</p>
+
+                    <div class="wrapper">
+                        <a class="cta" href="amd-vs-intel.html">
+                            <span>Leer más</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -496,15 +609,188 @@
     </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="cta-final text-center">
-    <h2>¿Necesitas ayuda tecnológica?</h2>
-    <a href="https://wa.me/5210000000000" class="btn btn-main">Contáctame ahora</a>
+<!-- Contacto -->
+<section id="contacto" class="py-3 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-3 orbitron">Contacto</h2>
+
+        <div class="row">
+            
+            <!-- INFO -->
+            <div class="col-md-6">
+                
+                <p>
+                    <i class="bi bi-whatsapp text-green"></i>
+                    <strong> WhatsApp: </strong>
+                    <a href="https://wa.me/522221106016?text=¡Hola%20*IC%20TecDigital*!%20Me%20gustaría%20recibir%20más%20información%20sobre:%20"
+                        target="_blank">222 110 6016</a>
+                    <br>
+
+                    <i class="bi bi-facebook text-green"></i>
+                    <strong> Facebook: </strong>
+                    <a href="https://www.facebook.com/share/1Ayj7ThyyN/" target="_blank">IC TecDigital</a>
+                    <br>
+
+                    <i class="bi bi-tiktok text-green"></i>
+                    <strong> TikTok: </strong>
+                    <a href="https://www.tiktok.com/@ic.tecdigital?_r=1&_t=ZS-953eSj8oIxl" target="_blank">@ic.tecdigital</a>
+                        <br>
+                    
+                    <i class="bi bi-globe2 text-green"></i>
+                    <strong> Sitio Web: </strong>
+                    <a href="https://ictecdigital.com" target="_blank">ictecdigital.com</a>
+                    <br>
+                </p>
+
+                <p>
+                    <i class="bi bi-clock text-green"></i>
+                    <strong> Horario de atención:</strong><br>
+                    Domingo: 11:00 AM a 17:00 PM<br>
+                    Lunes a Viernes: 09:00 AM a 19:00 PM<br>
+                    Sábado: No disponible
+                </p>
+
+                <p>
+                    <i class="bi bi-geo-alt text-green"></i>
+                    <strong> Ubicaciones de atención presencial:</strong><br>
+
+                    <a href="https://maps.app.goo.gl/Ei2r1qG2VxdfkQon9" target="_blank">Atoyac de Álvarez</a><br>
+                    <a href="https://maps.app.goo.gl/LmSR2ivdJGTfsHJw7" target="_blank">San Jerónimo de Juárez</a><br>
+                    <a href="https://maps.app.goo.gl/RJgdik3ac1kwPpaT7" target="_blank">Técpan de Galeana</a><br>
+                    <a href="https://maps.app.goo.gl/wJYu2kcZ7MqCePZr9" target="_blank">Heroica Puebla de Zaragoza</a>
+                </p>
+
+                <p>
+                    <i class="bi bi-headset text-green"></i>
+                    <strong> Servicios remotos:</strong><br>
+                    Disponibles para toda la 
+                    <a href="https://maps.app.goo.gl/T95iGSThH4wPwabB7" target="_blank">República Mexicana</a>.
+                </p>
+
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="col-md-6">
+                <h4 class="text-center mb-3">¡Envíanos tu cotización!</h4>
+            
+                <form id="form-cotizacion" autocomplete="off">
+            
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="nombre_form" name="nombre" required
+                            placeholder="Nombre completo">
+                    </div>
+            
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="correo_form" name="correo" placeholder="Correo (opcional)">
+                    </div>
+            
+                    <div class="mb-3">
+                        <select class="form-select" id="servicio_form" name="servicio" required>
+                            <option value="" selected disabled>Selecciona un servicio</option>
+                            <option value="Desarrollo Web">Desarrollo Web</option>
+                            <option value="Edición y Diseño">Edición y Diseño</option>
+                            <option value="Reparación Celulares">Reparación Celulares</option>
+                            <option value="Servicio Técnico">Servicio Técnico</option>
+                            <option value="Soporte Remoto">Soporte Remoto</option>
+                            <option value="Venta de PC">Venta de PC</option>
+                            <option value="Otro servicio">Otro servicio</option>
+                        </select>
+                    </div>
+            
+                    <div class="mb-3">
+                        <textarea class="form-control" id="mensaje_form" name="mensaje" rows="3"
+                            placeholder="Explica el servicio o lo que necesitas..."></textarea>
+                    </div>
+            
+                    <div class="text-center">
+                        <div class="wrapper">
+                            <button type="submit" class="cta">
+                                <span>
+                                    <i class="bi bi-whatsapp"></i> Cotizar
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+            
+                </form>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <!-- Footer -->
-<footer class="text-center p-4">
-    <p>© 2026 ICTec Digital</p>
+<footer class="footer-custom text-white py-4">
+    <div class="container">
+
+        <div class="row text-start align-items-center">
+
+            <!-- Logo -->
+            <div class="col-md-3 mb-3 text-center">
+                <img src="Imágenes/Logo.webp" alt="IC TecDigital"
+                    style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%;">
+            </div>
+
+            <!-- Info -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">IC Tecnología Digital</h5>
+                <p>
+                    Soluciones en tecnología, desarrollo web, soporte técnico y venta de equipos.
+                    Impulsamos tus proyectos con herramientas digitales modernas.
+                </p>
+            </div>
+
+            <!-- Enlaces -->
+            <div class="col-md-3 mb-3">
+                <h6 class="fw-bold">Sitios de Interés</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#sorteo">Sorteo</a></li>
+                    <li><a href="#pcs">Tienda</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-md-2 mb-3">
+                <h6 class="fw-bold">Contacto</h6>
+                <p class="mb-1">
+                    <i class="bi bi-whatsapp text-green"></i>
+                    <a href="https://wa.me/522221106016?text=¡Hola%20*IC%20TecDigital*!%20Me%20gustaría%20recibir%20más%20información%20sobre:%20" target="_blank">222 110 6016</a>
+                </p>
+
+                <p class="mb-1">
+                    <i class="bi bi-facebook text-green"></i>
+                    <a href="https://www.facebook.com/share/1Ayj7ThyyN/" target="_blank">IC TecDigital</a>
+                </p>
+
+                <p class="mb-1">
+                    <i class="bi bi-tiktok text-green"></i>
+                    <a href="https://www.tiktok.com/@ic.tecdigital" target="_blank">@ic.tecdigital</a>
+                </p>
+
+                <p>
+                    <i class="bi bi-globe2 text-green"></i>
+                    <a href="https://ictecdigital.com" target="_blank">ictecdigital.com</a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center pt-3 footer-bottom">
+            <p class="mb-1">
+                <a href="aviso-privacidad.html">Aviso de Privacidad</a> |
+                <a href="politica-cookies.html">Política de Cookies</a> |
+                <a href="terminos-servicio.html">Términos de Servicio</a>
+            </p>
+
+            <p class="mb-0">
+                &copy; 2026 IC TecDigital. Todos los derechos reservados.
+            </p>
+        </div>
+
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
