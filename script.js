@@ -112,7 +112,7 @@ function actualizarPrecioModal() {
     }
 
     precioEl.textContent =
-    "$" + precioFinal.toLocaleString() + " MXN";
+        "$" + precioFinal.toLocaleString() + " MXN";
 }
 
 // ENVIAR A WHATSAPP
@@ -125,8 +125,8 @@ function sendToWhatsApp(e) {
     const pc = document.getElementById("pcName").value;
     const precio = document.getElementById("modalPrice").textContent;
 
-    const mensaje = `¡Hola *IC TecDigital*!, quiero comprar la PC: _${pc}_.%0A
-Precio: ${precio}%0A
+    const mensaje = `¡Hola *IC TecDigital*!%0AQuiero comprar la PC: _${pc}_.%0A
+Precio: *${precio}*%0A%0A
 Nombre: ${nombre}%0A
 Correo: ${correo}%0A
 Método de pago: ${pago}.`;
@@ -135,3 +135,40 @@ Método de pago: ${pago}.`;
 
     window.open(url, "_blank");
 }
+
+// FORMULARIO
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("form-cotizacion");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const nombre = document.getElementById("nombre_form").value.trim();
+        const correo = document.getElementById("correo_form").value.trim();
+        const servicio = document.getElementById("servicio_form").value;
+        const mensaje = document.getElementById("mensaje_form").value.trim();
+
+        if (!nombre || !servicio) {
+            alert("Por favor completa los campos obligatorios.");
+            return;
+        }
+
+        let texto = `¡Hola *IC TecDigital*! Me gustaría solicitar una cotización:%0A%0A`;
+        texto += `Nombre: ${nombre}%0A`;
+        if (correo) texto += `Correo: ${correo}%0A`;
+        texto += `Servicio: ${servicio}%0A`;
+        if (mensaje) texto += `Detalles: ${mensaje}%0A`;
+
+        const telefono = "522221106016";
+
+        // 🔥 SOLO wa.me (clave)
+        const url = `https://wa.me/${telefono}?text=${texto}`;
+
+        window.open(url, "_blank");
+
+        form.reset();
+    });
+
+});
